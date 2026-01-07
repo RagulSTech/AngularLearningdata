@@ -6,7 +6,8 @@ import { TestngmodulesModule } from './testngmodules/testngmodules-module';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,CommonModule,FormsModule,TestngmodulesModule],
+  standalone: true,
+  imports: [RouterOutlet, CommonModule, FormsModule, TestngmodulesModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
