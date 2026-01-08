@@ -7,6 +7,7 @@ import { Dummy } from './dummy/dummy';
 import { Ngmodulesusage } from './ngmodulesusage/ngmodulesusage';
 import { Parentcmp } from './parentcmp/parentcmp';
 import { Childcmp } from './childcmp/childcmp';
+import { Pipes } from './pipes/pipes';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'angularconcepts', pathMatch: 'full' },
@@ -16,6 +17,7 @@ export const routes: Routes = [
     { path: 'signals', component: Signals },
     { path: 'ngmodulesusage', component: Ngmodulesusage },
     { path: 'parentcmp', component: Parentcmp },
-    { path: 'childcmp', component: Childcmp}
+    { path: 'childcmp', component: Childcmp},
+    { path: 'pipes', component:Pipes}
 ];
 
