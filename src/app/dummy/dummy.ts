@@ -10,7 +10,11 @@ import { FormsModule } from '@angular/forms';
 })
 export class Dummy {
 listdata : number = 0;
-printdata :string = "";
+printdata :string = "Dummy Component Works!";
+
+testdummy(){
+  alert("Dummy Component Works!");  
+}
 
 testclickevent(){
     switch(Number(this.listdata)){

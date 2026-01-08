@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter,Input } from '@angular/core';
 
 @Component({
   selector: 'app-childcmp',
@@ -12,4 +12,8 @@ export class Childcmp {
   passtoparent() {
     this.parentpassvalue.emit("Hello from child");
   }
+  clear(){
+    this.parentpassvalue.emit('');
+  }
+  @Input() parentvalues: string = '';
 }

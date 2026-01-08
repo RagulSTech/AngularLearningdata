@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Childcmp } from '../childcmp/childcmp';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-parentcmp',
-  imports: [Childcmp],
+  imports: [Childcmp,RouterLink],
   templateUrl: './parentcmp.html',
   styleUrl: './parentcmp.css',
 })
@@ -13,10 +14,10 @@ export class Parentcmp {
   returnvaluechild(parentpassvalue: string) {
     this.childvalue = parentpassvalue;
   }
-  clear() {
-    this.childvalue = '';
-  }
   passtochild() {
     this.passchildvalues = "Hello from parent";
+  }
+  clearchild(){
+    this.passchildvalues = '';
   }
 }

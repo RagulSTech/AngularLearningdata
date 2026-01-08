@@ -1,4 +1,12 @@
-<app-childcmp (parentpassvalue)="returnvaluechild($event)"></app-childcmp>
-<button (click)="clear()">Clear</button>
+<br>
+<button routerLink='/angularconcepts'routerLinkActive="router-link-active" >Close</button>
 
-<p>Child Component Value: {{childvalue}}</p>
+
+<p>Parent Component Value: {{childvalue}}</p>
+<app-childcmp [parentvalues]="passchildvalues" (parentpassvalue)="returnvaluechild($event)"></app-childcmp>
+
+
+
+
+<button (click)="passtochild()">Pass to Child</button>&nbsp;
+<button (click)="clearchild()">Clear</button>

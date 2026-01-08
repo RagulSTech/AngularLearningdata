@@ -1,20 +1,22 @@
 <p>dummy works!</p>
 
-  <div class="form-group">
-    <label for="concept">Choose a concept</label>
+<div class="form-group">
+  <label for="concept">Choose a concept</label>
 
-    <select id="concept" [(ngModel)]="listdata">
-      <option value="0">Select an option</option>
-      <option value="1">Metadata</option>
-      <option value="2">Modules</option>
-      <option value="3">Option 3</option>
-    </select>
+  <select id="concept" [(ngModel)]="listdata">
+    <option value="0">Select an option</option>
+    <option value="1">Metadata</option>
+    <option value="2">Modules</option>
+    <option value="3">Option 3</option>
+  </select>
 
-    <button type="button" class="submit-btn" (click)="testclickevent()">
-      Select
-    </button>
-  </div>
+  <button type="button" class="submit-btn" (click)="testclickevent()">
+    Select
+  </button>
+</div>
 
-  <p class="output" *ngIf="printdata">
-    {{ printdata }}
-  </p>
+<p class="output" *ngIf="printdata">
+  {{ printdata }}
+</p>
+
+
