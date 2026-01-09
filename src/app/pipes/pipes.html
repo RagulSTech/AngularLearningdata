@@ -7,3 +7,18 @@
 <p>{{strindata | uppercase}}</p>
 
 <p>{{titledata | titlecase}}</p>
+
+
+<label for="pipesdata">Enter some text:</label>
+<input type="text" id="pipesdata" [(ngModel)]="pipesdata">
+
+<select [(ngModel)]="selectedoptions">
+    <option [value]="0" selected>Select</option>
+    <option [value]="1">Uppercase</option>
+    <option [value]="2">Lowercase</option>
+    <option [value]="3">Length</option>
+</select>
+
+<button (click)="submitpipe()">Pipe</button>
+
+<p>Transformed Data: {{finaldata}}</p>

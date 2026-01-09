@@ -10,5 +10,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './ngmodulesusage.css',
 })
 export class Ngmodulesusage {
-  testdata: string = "Welcome to Angular Testdata!";
+  testdata: string = "Learning";
 }

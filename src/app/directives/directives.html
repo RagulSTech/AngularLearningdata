@@ -1,0 +1,22 @@
+<p>directives works!</p>
+
+<input type="number" [(ngModel)]="enterage">
+<button type="button" (click)="submitdata()">Submit</button>
+
+<p *ngIf="inputage >= 18" [ngStyle]="{color : textcolor}">
+    You are Eligible to Vote
+</p>
+
+
+<ul>
+    <li *ngFor="let item of nameslist">
+        {{item}}
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let item of markswitch" [ngSwitch]="true">
+        <span *ngSwitchCase="item >= 90" style="color:green; font-weight: bold;">{{item}}</span>
+        <span *ngSwitchCase="item < 90" style="color:black">{{item}}</span>
+    </li>
+</ul>
