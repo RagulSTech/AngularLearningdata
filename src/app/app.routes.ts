@@ -13,6 +13,8 @@ import { Calculatorservices } from './calculatorservices/calculatorservices';
 import { Home } from './home/home';
 import { Directive } from '@angular/core';
 import { Directives } from './directives/directives';
+import { Rxjxdata } from './rxjxdata/rxjxdata';
+import { Angularwebapi } from './angularwebapi/angularwebapi';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'angularconcepts', pathMatch: 'full' },
@@ -27,6 +29,8 @@ export const routes: Routes = [
     { path: 'pipes', component: Pipes },
     { path: 'Servicescall', component: Servicescall },
     { path: 'calculatorservices', component: Calculatorservices},
-    { path: 'Home', component:Home}
+    { path: 'Home', component:Home},
+    { path: 'Rxjxdata', component:Rxjxdata},
+    { path: 'Angularconnect', component:Angularwebapi}
 ];
 
