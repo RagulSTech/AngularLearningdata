@@ -4,6 +4,14 @@
 <a href="javascript:void(0)" (click)="tapsubmit()">Tap</a> 
 <a href="javascript:void(0)" (click)="takesubmit()">Take</a> 
 <a href="javascript:void(0)" (click)="debouncetimesubmit()">DebounceTime</a> 
+<a href="javascript:void(0)" (click)="ApiCalling()">ApiCalling Subscribe</a> 
+<a href="javascript:void(0)" (click)="ApiCallSwitch()">ApiCalling SwtichMap</a> 
+<a href="javascript:void(0)" (click)="MergeMap()">Merge Map</a> 
+<a href="javascript:void(0)" (click)="MergeMapApiCalling()">Merge Map API</a> 
+<a href="javascript:void(0)" (click)="concatmap()">Concate Map</a> 
+<a href="javascript:void(0)" (click)="retryrxjs()">Retry</a> 
+<a href="javascript:void(0)" (click)="finilizerxjs()">Finilize</a> 
+<a href="javascript:void(0)" (click)="subjectrxjs()">Subject</a> 
 <a href="javascript:void(0)" (click)="cleardata()">Clear</a>
 
 
@@ -11,3 +19,13 @@
 <ul>
   <li *ngFor="let item of results">{{ item }}</li>
 </ul>
+
+<!-- <div>{{ result?.message }}</div> -->
+
+
+<ul>
+  <li *ngFor="let item of result">{{ item | json }}</li>
+</ul>
+
+
+
